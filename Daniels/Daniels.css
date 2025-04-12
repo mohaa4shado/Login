@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*======== Home Section ======= */
+section.bg-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.601)), url(imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+div.hyper h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 20rem;
+}
+
+/* Transparent Navbar */
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    position: relative;
+    padding: 2rem;
+    margin: 7px;
+}
+
+a.navbar-brand {
+    font-size: 1.5rem;
+}
+
+section.bg-home nav {
+    background-color: rgba(60, 60, 60, 0.344);
+    padding: 0;
+}
+
+/* Active link underline */
+.nav-link.active::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: white;
+    position: absolute;
+}
+
+/* Centered Hero Section */
+.hero-text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+/* AboutMe Section */
+section.about {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.about-section {
+    padding: 60px 0;
+}
+
+.profile-img {
+    max-width: 75%;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: black;
+}
+
+.btn-dark {
+    background-color: black;
+    border: none;
+}
+
+button.btn.cv:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+}
+
+button.btn.cnt:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: rgb(255, 255, 255);
+}
+
+/* Portfolio Section */
+section#Works div.container h2 {
+    margin-top: 130px !important;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: black;
+    margin: 8px auto;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    margin: 5px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(219, 212, 212, 0.775);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.portfolio-icons a {
+    color: #000;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+/*  Testimonials Section */
+section.test-monial {
+    padding: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    margin-bottom: -25px;
+    background-color: #000;
+}
+
+section.test-monial {
+    background-color: #f7f7f7;
+}
+
+div.container h2.test {
+    margin-top: 120px;
+}
+
+div.carousel-inner div.carousel-item div p {
+    width: 60%;
+    margin: auto;
+}
+
+/* Calc Section */
+.stats-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.stats-section i {
+    font-size: 25px;
+    color: #333;
+}
+
+.stats-section h2,
+.stats-section h3 {
+    font-size: 15px;
+    color: #333;
+}
+
+/* Our Team */
+.team-member {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+.team-member img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+.team-member:hover img {
+    transform: scale(1.1);
+}
+.team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.team-member:hover .overlay {
+    opacity: 1;
+}
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+.team-info {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.team-info h5 {
+    margin: 0;
+}
+.team-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
